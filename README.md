@@ -1,10 +1,10 @@
 # Deepfl-logp
 
-LogP calculation based on fluorescent data
+LogP calculation based on fluorescent probes
 
 | Description | Input  | Output  | Training Data | Experimental Validation |
 | ------- | --- | --- | --- | --- |
-| LogP calculation based on fluorescent data for membrane permeability | SMILES | LogP | 124 fluorescent phobes and fluorophores | Yes |
+| LogP calculation based on small-molecule fluorescent probes for cell membrane permeability | SMILES | LogP | 10,749 molecules | Yes |
 
 ## Source code
 This model is published by Soliman, K., Grimm, F., Wurm, C.A. et al. Predicting the membrane permeability of organic fluorescent probes by the deep neural network based lipophilicity descriptor DeepFl-LogP. *Sci Rep 11*, 6991 (2021). https://doi.org/10.1038/s41598-021-86460-3
