@@ -75,7 +75,10 @@ class Model(object):
             R = []
             for r in reader:
                 R += [{"LogP": Float(r[0])}]
-        return R
+        meta = {"LogP": h}
+        result = {"result": R, "meta": meta}
+        shutil.rmtree(tmp_folder)
+        return result
 
 
 class Artifact(BentoServiceArtifact):

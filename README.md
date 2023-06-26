@@ -23,6 +23,11 @@ A deep neural network was trained to predict the LogP value of small molecules a
 * [Source Code](https://github.com/k-soliman/DeepFl-LogP)
 * Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos65rt)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos65rt.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos65rt) (AMD64)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://www.nature.com/articles/s41598-021-86460-3.epdf?sharing_token=zmYZd6qpwnDwc8tCOYGGf9RgN0jAjWel9jnR3ZoTv0OXuXXr_ZS6VuKQMyMJiA3PeIcqAJZTcpcNZJHblyChkQ2eTpzGXq23YsIcFlG8ayuEptKCJ1DeyIRGrh9O2d5JvvGGB9qG8cXgAuy_k-e1ncAMkAzpTegmR0XUbnftjv0%3D) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
