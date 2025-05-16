@@ -2,44 +2,78 @@
 
 A deep neural network was trained to predict the LogP value of small molecules and fluorescent probes using an experimentally annotated dataset of >13k molecules (OPERA). This dataset was complemented with fluorescent probes to improve the model accuracy in this space. Probes predicted impermeant to cell membranes consistently showed experimental LogP <1.
 
-## Identifiers
+This model was incorporated on 2021-11-10.
 
-* EOS model ID: `eos65rt`
-* Slug: `deepfl-logp`
+## Information
+### Identifiers
+- **Ersilia Identifier:** `eos65rt`
+- **Slug:** `deepfl-logp`
 
-## Characteristics
+### Domain
+- **Task:** `Annotation`
+- **Subtask:** `Property calculation or prediction`
+- **Biomedical Area:** `ADMET`
+- **Target Organism:** `Not Applicable`
+- **Tags:** `Permeability`, `ADME`, `LogP`
 
-* Input: `Compound`
-* Input Shape: `Single`
-* Task: `Regression`
-* Output: `Experimental value`
-* Output Type: `Float`
-* Output Shape: `Single`
-* Interpretation: LogP values of > 1 indicate membrane permeability
+### Input
+- **Input:** `Compound`
+- **Input Dimension:** `1`
 
-## References
+### Output
+- **Output Dimension:** `1`
+- **Output Consistency:** `Fixed`
+- **Interpretation:** LogP values of > 1 indicate membrane permeability
 
-* [Publication](https://www.nature.com/articles/s41598-021-86460-3.epdf?sharing_token=zmYZd6qpwnDwc8tCOYGGf9RgN0jAjWel9jnR3ZoTv0OXuXXr_ZS6VuKQMyMJiA3PeIcqAJZTcpcNZJHblyChkQ2eTpzGXq23YsIcFlG8ayuEptKCJ1DeyIRGrh9O2d5JvvGGB9qG8cXgAuy_k-e1ncAMkAzpTegmR0XUbnftjv0%3D)
-* [Source Code](https://github.com/k-soliman/DeepFl-LogP)
-* Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
+Below are the **Output Columns** of the model:
+| Name | Type | Direction | Description |
+|------|------|-----------|-------------|
+| clogp | float | low | Calculated octanol-water partition coefficient (logP) |
 
-## Ersilia model URLs
-* [GitHub](https://github.com/ersilia-os/eos65rt)
-* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos65rt.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos65rt) (AMD64)
 
-## Citation
+### Source and Deployment
+- **Source:** `Local`
+- **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos65rt](https://hub.docker.com/r/ersiliaos/eos65rt)
+- **Docker Architecture:** `AMD64`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos65rt.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos65rt.zip)
 
-If you use this model, please cite the [original authors](https://www.nature.com/articles/s41598-021-86460-3.epdf?sharing_token=zmYZd6qpwnDwc8tCOYGGf9RgN0jAjWel9jnR3ZoTv0OXuXXr_ZS6VuKQMyMJiA3PeIcqAJZTcpcNZJHblyChkQ2eTpzGXq23YsIcFlG8ayuEptKCJ1DeyIRGrh9O2d5JvvGGB9qG8cXgAuy_k-e1ncAMkAzpTegmR0XUbnftjv0%3D) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+### Resource Consumption
 
-## License
 
-This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a GPL-3.0 license.
+### References
+- **Source Code**: [https://github.com/k-soliman/DeepFl-LogP](https://github.com/k-soliman/DeepFl-LogP)
+- **Publication**: [https://www.nature.com/articles/s41598-021-86460-3](https://www.nature.com/articles/s41598-021-86460-3)
+- **Publication Type:** `Peer reviewed`
+- **Publication Year:** `2021`
+- **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
-Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+### License
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [LGPL-3.0-only](LICENSE) license.
 
-## About Us
+**Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
-The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
 
-[Help us](https://www.ersilia.io/donate) achieve our mission!
+## Use
+To use this model locally, you need to have the [Ersilia CLI](https://github.com/ersilia-os/ersilia) installed.
+The model can be **fetched** using the following command:
+```bash
+# fetch model from the Ersilia Model Hub
+ersilia fetch eos65rt
+```
+Then, you can **serve**, **run** and **close** the model as follows:
+```bash
+# serve the model
+ersilia serve eos65rt
+# generate an example file
+ersilia example -n 3 -f my_input.csv
+# run the model
+ersilia run -i my_input.csv -o my_output.csv
+# close the model
+ersilia close
+```
+
+## About Ersilia
+The [Ersilia Open Source Initiative](https://ersilia.io) is a tech non-profit organization fueling sustainable research in the Global South.
+Please [cite](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff) the Ersilia Model Hub if you've found this model to be useful. Always [let us know](https://github.com/ersilia-os/ersilia/issues) if you experience any issues while trying to run it.
+If you want to contribute to our mission, consider [donating](https://www.ersilia.io/donate) to Ersilia!
