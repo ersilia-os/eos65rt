@@ -1,10 +1,12 @@
-#!/usr/bin/env python3
+### #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Wed Apr 15 09:59:00 2020
 
 @author: Kareem Soliman
 """
+
+# imports
 
 import os
 import numpy as np 
@@ -14,10 +16,11 @@ import tensorflow as tf
 from tensorflow import keras
 #from keras.models import load_model
 
-
+# current file directory
 ROOT = os.path.dirname(os.path.abspath(__file__))
+MODELPATH = os.path.join(ROOT, "..", "..", "checkpoints", "2020_DNN_v44_epoch_78_r0.892_rms0.359.h5")
+model = tf.keras.models.load_model(MODELPATH)
 
-model = tf.keras.models.load_model(os.path.join(ROOT, "2020_DNN_v44_epoch_78_r0.892_rms0.359.h5"))
 
 """**Functions**"""
 
@@ -1402,6 +1405,8 @@ def fps_plus_others(mol):
 
 import sys, os
 import csv
+
+
 infile = sys.argv[1]
 outfile = sys.argv[2]
 
@@ -1440,6 +1445,6 @@ for i, p in zip(idxs, preds):
 
 with open(outfile, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["LogP"])
+    writer.writerow(["cLogP".lower()])
     for r in y:
         writer.writerow([r])
