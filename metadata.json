@@ -3,21 +3,18 @@
     "Slug": "deepfl-logp",
     "Status": "Ready",
     "Title": "Membrane permeability of fluorescent probes",
-    "Description": "A deep neural network was trained to predict the LogP value of small molecules and fluorescent probes using an experimentally annotated dataset of >13k molecules (OPERA). This dataset was complemented with fluorescent probes to improve the model accuracy in this space. Probes predicted impermeant to cell membranes consistently showed experimental LogP <1.\n",
+    "Description": "A deep neural network was trained to predict the LogP value of small molecules and fluorescent probes using an experimentally annotated dataset of >13k molecules (OPERA). This dataset was complemented with fluorescent probes to improve the model accuracy in this space. Probes predicted impermeant to cell membranes consistently showed experimental LogP <1.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Annotation",
+    "Subtask": "Property calculation or prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Property calculation or prediction",
-    "Biomedical Area": [
-        "ADMET"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
     "Output": [
         "Experimental value"
     ],
@@ -29,19 +26,22 @@
         "ADME",
         "LogP"
     ],
-    "Publication": "https://www.nature.com/articles/s41598-021-86460-3",
+    "Biomedical Area": [
+        "ADMET"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2021,
+    "Publication": "https://www.nature.com/articles/s41598-021-86460-3",
     "Source Code": "https://github.com/k-soliman/DeepFl-LogP",
     "License": "LGPL-3.0-only",
     "Contributor": "miquelduranfrigola",
     "Incorporation Date": "2021-11-10",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos65rt.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos65rt",
     "Docker Architecture": [
         "AMD64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos65rt.zip",
-    "Deployment": [
-        "Local"
     ]
 }
