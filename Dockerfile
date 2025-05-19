@@ -7,5 +7,5 @@ RUN pip install h5py==2.10.0
 RUN pip install rdkit==2024.3.5
 
 WORKDIR /repo
-COPY ./repo
+COPY . /repo
   
