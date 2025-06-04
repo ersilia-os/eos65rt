@@ -41,7 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `6`
 - **Environment Size (Mb):** `2016`
+- **Image Size (Mb):** `2079.39`
 
+**Computational Performance (seconds):**
+- 10 inputs: `37.15`
+- 100 inputs: `38.95`
+- 10000 inputs: `1222.2`
 
 ### References
 - **Source Code**: [https://github.com/k-soliman/DeepFl-LogP](https://github.com/k-soliman/DeepFl-LogP)
