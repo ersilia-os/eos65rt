@@ -4,6 +4,7 @@ A deep neural network was trained to predict the LogP value of small molecules a
 
 This model was incorporated on 2021-11-10.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos65rt`
@@ -13,7 +14,7 @@ This model was incorporated on 2021-11-10.
 - **Task:** `Annotation`
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `ADMET`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Permeability`, `ADME`, `LogP`
 
 ### Input
