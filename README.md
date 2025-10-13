@@ -2,8 +2,7 @@
 
 A deep neural network was trained to predict the LogP value of small molecules and fluorescent probes using an experimentally annotated dataset of >13k molecules (OPERA). This dataset was complemented with fluorescent probes to improve the model accuracy in this space. Probes predicted impermeant to cell membranes consistently showed experimental LogP <1.
 
-This model was incorporated on 2021-11-10.
-
+This model was incorporated on 2021-11-10.Last packaged on 2025-10-13.
 
 ## Information
 ### Identifiers
@@ -42,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `4`
 - **Environment Size (Mb):** `2016`
-- **Image Size (Mb):** `2079.39`
+- **Image Size (Mb):** `2080.42`
 
 **Computational Performance (seconds):**
-- 10 inputs: `37.15`
-- 100 inputs: `38.95`
-- 10000 inputs: `1222.2`
+- 10 inputs: `29.39`
+- 100 inputs: `22.56`
+- 10000 inputs: `326.24`
 
 ### References
 - **Source Code**: [https://github.com/k-soliman/DeepFl-LogP](https://github.com/k-soliman/DeepFl-LogP)
