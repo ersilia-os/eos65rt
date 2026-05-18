@@ -50,7 +50,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/k-soliman/DeepFl-LogP](https://github.com/k-soliman/DeepFl-LogP)
-- **Publication**: [https://www.nature.com/articles/s41598-021-86460-3](https://www.nature.com/articles/s41598-021-86460-3)
+- **Publication**: [https://doi.org/10.1038/s41598-021-86460-3](https://doi.org/10.1038/s41598-021-86460-3)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2021`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
