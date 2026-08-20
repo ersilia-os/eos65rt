@@ -1,6 +1,6 @@
 # Membrane permeability of fluorescent probes
 
-Calculates a lipophilicity value tuned for fluorescent probes, whose charged and highly conjugated scaffolds fall outside the chemistry most logP predictors were fitted on. Soliman and colleagues trained DeepFl-LogP specifically on dye-like molecules, since knowing whether a probe crosses the cell membrane determines whether it can be used for live-cell imaging at all. Values above 1 generally indicate a membrane-permeant probe, though permeability also depends on charge state and size.
+A deep neural network was trained to predict the LogP value of small molecules and fluorescent probes using an experimentally annotated dataset of >13k molecules (OPERA). This dataset was complemented with fluorescent probes to improve the model accuracy in this space. Probes predicted impermeant to cell membranes consistently showed experimental LogP <1.
 
 This model was incorporated on 2021-11-10.Last packaged on 2025-10-13.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2021-11-10.Last packaged on 2025-10-13.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Calculated octanol-water partition coefficient, where values above 1 suggest membrane permeability.
+- **Interpretation:** LogP values of > 1 indicate membrane permeability
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
