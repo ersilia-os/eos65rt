@@ -2,7 +2,8 @@
 
 Calculates DeepFl-LogP, a fragment-based lipophilicity descriptor built by Soliman and colleagues to flag which fluorescent probes cross the cell membrane, the limiting step for live-cell super-resolution imaging. A deep neural network was trained on more than 13,000 experimental partition coefficients from the OPERA dataset, extended with a few hundred dye-like molecules so that the charged, highly conjugated chemistry of probes is represented. A threshold of 1 separated permeant from impermeant probes with 96% accuracy on a 124-probe test set.
 
-This model was incorporated on 2021-11-10.Last packaged on 2025-10-13.
+This model was incorporated on 2021-11-10.
+Last packaged on 2025-10-13.
 
 ## Information
 ### Identifiers
@@ -28,7 +29,7 @@ This model was incorporated on 2021-11-10.Last packaged on 2025-10-13.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| clogp | float | low | Calculated octanol-water partition coefficient (logP) |
+| clogp | float | high | Calculated octanol-water partition coefficient (logP) |
 
 
 ### Source and Deployment
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos65rt](https://hub.docker.com/r/ersiliaos/eos65rt)
 - **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos65rt.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos65rt.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos65rt_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos65rt_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `4`
